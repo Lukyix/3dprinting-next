@@ -1,8 +1,8 @@
-import Image from "next/image";
+import HeroImageSquare from "@/public/hero-image-square.png"
 
 export default function AboutPage() {
-  return (
- <main>
+    return (
+        <main>
             <section className="container max-w-4xl px-4 py-8 mx-auto">
                 <h1 className="mb-6 text-4xl font-bold text-center">
                     About PrintForge
@@ -10,18 +10,22 @@ export default function AboutPage() {
 
                 <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
                     <div className="relative h-[300px] w-full">
-                        <Image
-                            src="/hero-image-square.png"
+
+                        <img
+                            src={HeroImageSquare.src}
                             alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
-                            width="350"
-                            height="350"
+                            className="absolute inset-0 w-full h-full object-cover rounded-lg"
                         />
+
                     </div>
                     <div>
-                        <p className="mb-4 text-sm text-gray-600 uppercase" aria-hidden="true">
+                        <p
+                            className="mb-4 text-sm text-gray-600 uppercase"
+                            aria-hidden="true"
+                        >
                             About PrintForge
                         </p>
-                        <h2 className="mb-4 text-2xl font-semibold">
+                        <h2 className="mb-4 text-2xl font-semibold font-montserrat-alternates">
                             Empowering Makers Worldwide
                         </h2>
                         <p className="mb-4 text-gray-700">
@@ -43,10 +47,12 @@ export default function AboutPage() {
 
             <section className="py-12" aria-labelledby="key-features">
                 <div className="px-6 mx-auto max-w-7xl">
-                    <h2 id="key-features" className="sr-only">Key Features</h2>
+                    <h2 id="key-features" className="sr-only">
+                        Key Features
+                    </h2>
                     <div className="grid gap-6 md:gap-0 md:grid-cols-3">
                         <article className="p-6 bg-white">
-                            <h3 className="mb-3 text-xl font-semibold">
+                            <h3 className="mb-3 text-xl font-semibold font-montserrat-alternates">
                                 100K+ Models
                             </h3>
                             <p className="text-gray-600">
@@ -56,7 +62,7 @@ export default function AboutPage() {
                             </p>
                         </article>
                         <article className="p-6 bg-white border-gray-400 md:border-x">
-                            <h3 className="mb-3 text-xl font-semibold">
+                            <h3 className="mb-3 text-xl font-semibold font-montserrat-alternates">
                                 Active Community
                             </h3>
                             <p className="text-gray-600">
@@ -65,7 +71,7 @@ export default function AboutPage() {
                             </p>
                         </article>
                         <article className="p-6 bg-white">
-                            <h3 className="mb-3 text-xl font-semibold">
+                            <h3 className="mb-3 text-xl font-semibold font-montserrat-alternates">
                                 Free to Use
                             </h3>
                             <p className="text-gray-600">
@@ -87,11 +93,11 @@ export default function AboutPage() {
                         revolutionizing the way we create, prototype, and
                         manufacture. Our platform serves as a bridge between
                         designers and makers, enabling the sharing of knowledge
-                        and creativity that pushes the boundaries of whats
+                        and creativity that pushes the boundaries of what's
                         possible with 3D printing.
                     </p>
                     <p className="text-gray-700">
-                        Whether youre a hobbyist looking for your next weekend
+                        Whether you're a hobbyist looking for your next weekend
                         project, an educator seeking teaching materials, or a
                         professional designer wanting to share your creations,
                         PrintForge provides the tools and community to support
@@ -100,5 +106,5 @@ export default function AboutPage() {
                 </div>
             </section>
         </main>
-  );
+    )
 }
