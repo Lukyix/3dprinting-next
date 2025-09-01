@@ -1,6 +1,7 @@
 import Link from "next/link"
 import PFLogoIcon from "@/public/printforge-logo-icon.svg"
 import PFLogo from "@/public/printforge-logo.svg"
+import Image from "next/image"
 
 export default function Navbar() {
   return (
@@ -9,16 +10,20 @@ export default function Navbar() {
         <Link href="/">
           <div className="relative cursor-pointer">
             {/* Desktop Logo */}
-            <img
+            <Image
               src={PFLogo.src}
               alt="PrintForge Logo"
               className="w-[200px] h-auto hidden md:block"
+              width={200}
+              height={100}
             />
             {/* Mobile Logo */}
-            <img
+            <Image
               src={PFLogoIcon.src}
               alt="PrintForge Logo"
               className="w-[40px] h-auto block md:hidden"
+              width={40}
+              height={40}
             />
           </div>
         </Link>

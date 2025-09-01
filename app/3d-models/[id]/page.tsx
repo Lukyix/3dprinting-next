@@ -40,7 +40,6 @@ export default async function ModelDetailPage({ params }: ModelDetailPageProps) 
 
           <Pill
             className="mb-6 w-fit"
-            role="status"
             aria-label="Category"
           >
             {model.category}
