@@ -1,5 +1,4 @@
 import HeroImageSquare from "@/public/hero-image-square.png"
-import Image from "next/image"
 
 export default function AboutPage() {
     return (
@@ -12,12 +11,10 @@ export default function AboutPage() {
                 <div className="grid items-center gap-8 mb-12 md:grid-cols-2">
                     <div className="relative h-[300px] w-full">
 
-                        <Image
+                        <img
                             src={HeroImageSquare.src}
                             alt="PrintForge Community - A group of makers collaborating on 3D printing projects"
                             className="absolute inset-0 w-full h-full object-cover rounded-lg"
-                            width={500}
-                            height={500}
                         />
 
                     </div>

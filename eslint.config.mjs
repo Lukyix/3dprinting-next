@@ -29,7 +29,7 @@ const eslintConfig = [
         rootDir: 'packages/my-app/',
       },
     },
-  },
+  },  
 ];
 
 export default eslintConfig;
